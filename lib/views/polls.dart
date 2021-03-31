@@ -12,9 +12,9 @@ class _PollState extends State<Poll> {
   double option3 = 2.0;
   double option4 = 3.0;
 
-  String user = "king@mail.com";
-  Map usersWhoVoted = {'sam@mail.com': 3, 'mike@mail.com' : 4, 'john@mail.com' : 1, 'kenny@mail.com' : 1};
-  String creator = "eddy@mail.com";
+  String user = "rohit@hotmail.com";
+  Map usersWhoVoted = {'batman@gmail.com': 3, 'superman@yahoo.com' : 4, 'wonderwoman@idea.com' : 1, 'flash@mail.com' : 1};
+  String creator = "cyborg@mail.com";
   @override
   Widget build(BuildContext context) {
     return Scaffold(
