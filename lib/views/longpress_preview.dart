@@ -35,7 +35,7 @@ class _LongPressPreviewState extends State<LongPressPreview> {
                 child: Card(
                     color: Colors.greenAccent,
                     child: ListTile(
-                      title: Text("Organization"),
+                      title: Text("Longpress to see full description"),
                       subtitle: Text("Created by Name"),
                       leading: description.length >= 15? Text("Description: ${description.substring(0,15)}..."): Text("Description: $description"),
                     )
