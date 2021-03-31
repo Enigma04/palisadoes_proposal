@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:polls/polls.dart';
-import 'polls.dart';
 
 class Poll extends StatefulWidget {
   @override
@@ -35,7 +34,7 @@ class _PollState extends State<Poll> {
           userChoice: usersWhoVoted[this.user],
           onVoteBackgroundColor: Colors.blue,
           leadingBackgroundColor: Colors.blue,
-          backgroundColor: Colors.white,
+          backgroundColor: Colors.black,
           onVote: (choice) {
             print(choice);
             setState(() {
