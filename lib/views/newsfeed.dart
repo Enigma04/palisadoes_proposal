@@ -94,6 +94,7 @@ class _NewsFeedState extends State<NewsFeed> {
     return Scaffold(
         appBar: AppBar(
           title: Text("Newsfeed demo"),
+          backgroundColor: Color(0xff3DA468),
         ),
         body: ListView.builder(
             itemCount: posts.length - 1,

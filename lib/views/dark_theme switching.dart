@@ -14,6 +14,7 @@ class _DarkThemeState extends State<DarkTheme> {
       data: Theme.of(context),
       child: Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xff3DA468),
           title: Text('Adaptive Theme Demo'),
         ),
         body: SizedBox.expand(

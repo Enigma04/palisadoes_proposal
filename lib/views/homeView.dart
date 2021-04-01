@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:multipage_form_test/views/dark_theme%20switching.dart';
 import 'package:multipage_form_test/views/longpress_preview.dart';
 import 'package:multipage_form_test/views/newsfeed_post.dart';
+import 'package:multipage_form_test/views/notification_test.dart';
 import 'package:multipage_form_test/views/polls.dart';
 
 class HomeView extends StatelessWidget {
@@ -9,6 +10,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Color(0xff3DA468),
         title: Text("Talawa GSoC Proposal"),
       ),
       body: SingleChildScrollView(
@@ -55,6 +57,16 @@ class HomeView extends StatelessWidget {
                 height: 50,
                 width: 420,
                 child: Text("Dark Theme",style: TextStyle(fontSize: 35),),
+              ),
+            ),
+            SizedBox(height: 10,),
+            GestureDetector(
+              onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> DropDownNotification())),
+              child: Container(
+                color: Colors.purple,
+                height: 50,
+                width: 420,
+                child: Text("Notification bell and full sized list",style: TextStyle(fontSize: 25),),
               ),
             ),
           ],

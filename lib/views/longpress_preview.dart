@@ -16,6 +16,7 @@ class _LongPressPreviewState extends State<LongPressPreview> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Long press preview demo"),
+        backgroundColor: Color(0xff3DA468),
       ),
       body: Stack(
         children: [
