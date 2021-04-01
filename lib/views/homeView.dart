@@ -4,6 +4,7 @@ import 'package:multipage_form_test/views/longpress_preview.dart';
 import 'package:multipage_form_test/views/newsfeed_post.dart';
 import 'package:multipage_form_test/views/notification_test.dart';
 import 'package:multipage_form_test/views/polls.dart';
+import 'package:multipage_form_test/views/showcase_demo.dart';
 
 class HomeView extends StatelessWidget {
   @override
@@ -67,6 +68,16 @@ class HomeView extends StatelessWidget {
                 height: 50,
                 width: 420,
                 child: Text("Notification bell and full sized list",style: TextStyle(fontSize: 25),),
+              ),
+            ),
+            SizedBox(height: 10,),
+            GestureDetector(
+              onTap: ()=> Navigator.push(context, MaterialPageRoute(builder: (context)=> ShowCasing())),
+              child: Container(
+                color: Colors.teal,
+                height: 50,
+                width: 420,
+                child: Text("Highlighting certain parts of UI",style: TextStyle(fontSize: 25),),
               ),
             ),
           ],
