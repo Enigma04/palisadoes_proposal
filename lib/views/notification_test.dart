@@ -15,20 +15,6 @@ class _DropDownNotificationState extends State<DropDownNotification> {
   }
   @override
   Widget build(BuildContext context) {
-    Card showCards()
-    {
-      for(int i =0; i<=10; i++)[
-        Card(
-      child: ListTile(
-      leading: Icon(Icons.supervised_user_circle),
-    title: Text("Notification ${i+1}"),
-      ),
-      ),
-        SizedBox(
-          height: 10,
-        ),
-      ];
-    }
     return Scaffold(
       appBar: AppBar(
         title: Text('DropDown Notifications'),
@@ -89,7 +75,7 @@ class _DropDownNotificationState extends State<DropDownNotification> {
                       },
                       child: Row(
                         children: [
-                          Icon(Icons.supervised_user_circle, color: Colors.black,),
+                          Icon(Icons.add_outlined, color: Colors.black,),
                           Padding(
                             padding: EdgeInsets.only(left: 10),
                             child: Text("See all"),
