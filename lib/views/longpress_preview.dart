@@ -7,7 +7,7 @@ class LongPressPreview extends StatefulWidget {
 }
 
 class _LongPressPreviewState extends State<LongPressPreview> {
-  String description = "wkjdn kjdn dkjndkjdnkjdnfkjenfekjfnefkjnf efefnesfkjenf enfns fjenfeskjfn wefkjfnsd f efksnfewkjfnrsfskjf ef";
+  String description = "SAP Consulting Pvt. LTD, formed in 2002, is a leading provider of technical and business solutions. The organization has strength of 6529 employees spread across five locations – New York, California, Austin, Omaha and San Antonio.";
   bool showPreview = false;
 
   @override
@@ -33,13 +33,21 @@ class _LongPressPreviewState extends State<LongPressPreview> {
                 });
               },
 
-                child: Card(
-                    color: Colors.greenAccent,
-                    child: ListTile(
-                      title: Text("Longpress to see full description"),
-                      subtitle: Text("Created by Name"),
-                      leading: description.length >= 15? Text("Description: ${description.substring(0,15)}..."): Text("Description: $description"),
-                    )
+                child: Container(
+                  height: 80,
+                  child: Card(
+                      color: Colors.blue,
+                      child: ListTile(
+                        title: Text("Longpress to see full description"),
+                        subtitle: Column(
+                          children: [
+                            Text("Created by Name"),
+                            description.length >= 15? Text("Description: ${description.substring(0,15)}..."): Text("Description: $description"),
+                          ],
+                        ),
+                        leading: Icon(Icons.supervised_user_circle),
+                      )
+                  ),
                 ),
               ),
             ),
