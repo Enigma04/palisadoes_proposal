@@ -54,14 +54,17 @@ class _LongPressPreviewState extends State<LongPressPreview> {
             if(showPreview)...[
             BackdropFilter(
             filter: ImageFilter.blur(
-                  sigmaX: 5.0,
-                  sigmaY: 5.0
+                  sigmaX: 10.0,
+                  sigmaY: 10.0
                  )
               ),
               Center(
-                child: Container(
-                  color: Colors.white,
-                  child: Text("Description: $description", style: TextStyle(color: Colors.teal),),
+                child: Padding(
+                  padding: EdgeInsets.all(8),
+                  child: Container(
+                    color: Colors.white,
+                    child: Text("Description: $description", style: TextStyle(color: Colors.teal),),
+                  ),
                 ),
               )
             ]
